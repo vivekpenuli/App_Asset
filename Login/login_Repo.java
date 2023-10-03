@@ -86,7 +86,7 @@ public class LoginUserActivity extends AppCompatActivity {
             finish();
         }
 //    }
-//    private boolean validateField() {
+//    private boolean validateField() {              // Used to check the entry fields while login
 //        int flag=0;
 //
 //        if (emaillogin.getText().toString().isEmpty())
