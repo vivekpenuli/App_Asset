@@ -38,7 +38,7 @@ public class LoginUserActivity extends AppCompatActivity {
         passlogin = findViewById(R.id.passlogin);
         loginuser = findViewById(R.id.loginuser);
 
-        gotologin.setOnClickListener(new View.OnClickListener() {
+        gotologin.setOnClickListener(new View.OnClickListener() {           // Moving to new Activity
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginUserActivity.this, RegisterUserActivity.class);
