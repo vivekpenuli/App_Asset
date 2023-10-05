@@ -25,7 +25,7 @@ class CartBindingAdapter(private val dataSet: List<cartdata>) :           // Lis
     class ViewHolder(private val binding: CartitemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: cartdata) {
+        fun bind(item: cartdata) {      // note define the datatype of your data class
 
             // element whose id we define in XML 
             binding.dishImageView.setImageResource(item.imageResource)
