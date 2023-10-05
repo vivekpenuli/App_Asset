@@ -5,7 +5,8 @@ import com.example.food_admin.DataModel.cartdata
 import com.example.food_admin.databinding.CartitemBinding
 
 
-// Replace with your actual package name
+// Replace with your actual package name  
+// Note: The file name should be the same as of recylecer view calss name
 
 class CartBindingAdapter(private val dataSet: List<cartdata>) :
     RecyclerView.Adapter<CartBindingAdapter.ViewHolder>() {
