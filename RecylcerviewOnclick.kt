@@ -11,6 +11,8 @@ import com.example.food_order.databinding.MenuitemBinding
 class MenuAdapter(private val dataSet: List<YourDataModel>) :
     RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
 
+//         To open a new activity when you click on a RecyclerView item, you need to add a click listener to the items in your MenuAdapter. Here's how you can do that:
+// First, create an interface in your adapter to define a click listener:
     interface OnItemClickListener {
         fun onItemClick(item: YourDataModel)
     }
