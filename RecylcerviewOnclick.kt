@@ -17,6 +17,8 @@ class MenuAdapter(private val dataSet: List<YourDataModel>) :
         fun onItemClick(item: YourDataModel)
     }
 
+//    Add a property for the click listener in your adapter:
+
     private var itemClickListener: OnItemClickListener? = null
 
     fun setOnItemClickListener(listener: OnItemClickListener) {
