@@ -39,7 +39,9 @@ class MenuAdapter(private val dataSet: List<YourDataModel>) :
 
     override fun getItemCount() = dataSet.size
 
-    inner class ViewHolder(private val binding: MenuitemBinding) :
+    //    Modify your ViewHolder class to set an OnClickListener on the root view (the entire item):
+    
+        inner class ViewHolder(private val binding: MenuitemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: YourDataModel) {
