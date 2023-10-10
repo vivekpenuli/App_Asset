@@ -33,6 +33,10 @@ public class LoginUserActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();      //Initalizing fireabase and acessing the current user
         currentuser = auth.getCurrentUser();
 
+
+
+
+        // Findindg the rerfernce of all componenet
         gotologin = findViewById(R.id.gotologin);
         emaillogin = findViewById(R.id.emailogin);
         passlogin = findViewById(R.id.passlogin);
