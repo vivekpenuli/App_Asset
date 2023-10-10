@@ -23,7 +23,7 @@ public class LoginUserActivity extends AppCompatActivity {
     TextInputEditText emaillogin, passlogin;
     Button loginuser;
     FirebaseAuth auth;        // Getting the fireabase auth service initalize
-    FirebaseUser currentuser;
+    FirebaseUser currentuser;   // get the current user id from system
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
