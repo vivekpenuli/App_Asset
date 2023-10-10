@@ -22,7 +22,7 @@ public class LoginUserActivity extends AppCompatActivity {
     TextView gotologin;
     TextInputEditText emaillogin, passlogin;
     Button loginuser;
-    FirebaseAuth auth;
+    FirebaseAuth auth;        // Getting the fireabase auth service initalize
     FirebaseUser currentuser;
 
     @Override
