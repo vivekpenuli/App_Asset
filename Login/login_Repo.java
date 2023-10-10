@@ -80,7 +80,7 @@ public class LoginUserActivity extends AppCompatActivity {
 
 
     }
-
+// It ensure the user which login should reamain login event after closing the application
     @Override
     protected void onStart() {
         super.onStart();
