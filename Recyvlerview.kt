@@ -24,9 +24,12 @@ class CartBindingAdapter(private val dataSet: List<cartdata>) :           // Lis
     // We can customize acoording to our need how many element do we want in recylerview
     override fun getItemCount() = dataSet.size
 
+
+        
     class ViewHolder(private val binding: CartitemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+            // here we are traversing the list we createed of cart data type and aceesing each element through it
         fun bind(item: cartdata) {      // note define the datatype of your data class
 
             // element whose id we define in XML 
