@@ -21,6 +21,7 @@ class CartBindingAdapter(private val dataSet: List<cartdata>) :           // Lis
     }
 
     // restrict the size of element appearain in recylcerview
+    // We can customize acoording to our need how many element do we want in recylerview
     override fun getItemCount() = dataSet.size
 
     class ViewHolder(private val binding: CartitemBinding) :
