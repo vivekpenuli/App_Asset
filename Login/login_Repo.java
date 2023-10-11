@@ -81,6 +81,7 @@ public class LoginUserActivity extends AppCompatActivity {
 
     }
 // It ensure the user which login should reamain login event after closing the application
+    // It aaslo ensure that the user do not need to re=ligon itself again 
     @Override
     protected void onStart() {
         super.onStart();
