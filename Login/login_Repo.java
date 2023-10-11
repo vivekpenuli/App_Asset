@@ -90,7 +90,7 @@ public class LoginUserActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-//    }
+    }
 //    private boolean validateField() {              // Used to check the entry fields while login
 //        int flag=0;
 //
