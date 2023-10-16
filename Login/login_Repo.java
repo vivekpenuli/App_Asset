@@ -46,7 +46,7 @@ public class LoginUserActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginUserActivity.this, RegisterUserActivity.class);
-                startActivity(intent);
+                startActivity(intent);      // moving to new activity
             }
 
         });
