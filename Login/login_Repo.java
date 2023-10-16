@@ -31,7 +31,7 @@ public class LoginUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login_user);
 
         auth = FirebaseAuth.getInstance();      //Initalizing fireabase and acessing the current user
-        currentuser = auth.getCurrentUser();
+        currentuser = auth.getCurrentUser();  // geting teh id of current user
 
 
 
