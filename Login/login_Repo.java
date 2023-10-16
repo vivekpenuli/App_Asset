@@ -88,7 +88,7 @@ public class LoginUserActivity extends AppCompatActivity {
         if (currentuser != null) {
             Intent intent = new Intent(LoginUserActivity.this, MainActivity.class);
             startActivity(intent);
-            finish();
+            finish();    // celaning the stack of last visisted activity
         }
     }
 //    private boolean validateField() {              // Used to check the entry fields while login
