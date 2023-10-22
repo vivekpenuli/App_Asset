@@ -56,3 +56,6 @@ var isAccepted = false
     }
 }
 
+/*
+For more information Go to Food Ordering Admin pannel where we see the pending order option . There we see the use of this delete item from recylcerview use
+*/
