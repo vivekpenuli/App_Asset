@@ -1,6 +1,7 @@
 package com.example.food_order.Fragment
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.appcompat.widget.SearchView
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.food_order.DataModel.YourDataModel
+import com.example.food_order.FoodItemActivity
 import com.example.food_order.adapter.MenuAdapter
 import com.example.food_order.databinding.FragmentSearchBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -63,12 +65,55 @@ class SearchFragment : Fragment() {
         return binding.root
     }
 
+//    private fun setupRecyclerView() {
+    // Just Normal element showing
+//        val recyclerView = binding.searchrecycler
+//        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+//        val adapter = MenuAdapter(filteredItems) // Use filtered list
+//        recyclerView.adapter = adapter
+//    }
+
+
     private fun setupRecyclerView() {
+        // you are moving to next activiity on clinking the recylerview item
         val recyclerView = binding.searchrecycler
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        val adapter = MenuAdapter(filteredItems) // Use filtered list
+        val adapter = MenuAdapter(filteredItems)
         recyclerView.adapter = adapter
+        adapter.setOnItemClickListener(object : MenuAdapter.OnItemClickListener {
+            override fun onItemClick(item: YourDataModel) {
+                // Handle item click here
+                // For example, open a new activity
+                val intent = Intent(requireContext(), FoodItemActivity::class.java)
+                // Pass any data you need to the new activity using intent.putExtra
+
+//                println("the food name is ${item.foodName}")
+//                println("the food name is ${item.foodPrice}")
+
+
+                // Create a Bundle to store data
+                // Create a Bundle to store data
+                val bundle = Bundle()
+                bundle.putString("imageResourceId",item.foodImg )
+                bundle.putString("itemName", item.foodName)
+                bundle.putString("itemprice", item.foodPrice)
+                bundle.putString("itemdisc", item.foodDisc)
+                bundle.putString("itemingre", item.foodIngred)
+
+                // Attach the Bundle to the Intent
+
+                // Attach the Bundle to the Intent
+                intent.putExtras(bundle)
+                startActivity(intent)
+            }
+        })
+
+
+
+
+
     }
+
 
     private fun retrieveItems() {
         val foodRef: DatabaseReference = database.reference.child("menu")
