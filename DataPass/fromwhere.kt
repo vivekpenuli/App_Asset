@@ -91,8 +91,11 @@ class SearchFragment : Fragment() {
 //                println("the food name is ${item.foodPrice}")
 
 
-                // Create a Bundle to store data
-                // Create a Bundle to store data
+                /* Create a Bundle to store data
+                 Create a Bundle to store data
+In Android Bundel are used to passed content between Two activity 
+Here in the below code we showing how the data passing between Activity
+*/
                 val bundle = Bundle()
                 bundle.putString("imageResourceId",item.foodImg )
                 bundle.putString("itemName", item.foodName)
