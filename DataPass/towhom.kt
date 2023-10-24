@@ -30,6 +30,11 @@ binding.imageButton.setOnClickListener {
     startActivity(intent)
     finish()
 }
+/*
+When Data from one activity passed to other activit as in Bundle we need to 
+Use those data into other activity by calling  intent .
+Intent is a way of using the data passed from one activity to be used by otehr activty 
+*/
         val foodName = intent.getStringExtra("itemName")
         val foodPrice = intent.getStringExtra("itemprice")
         val foodImg = intent.getStringExtra("imageResourceId")
