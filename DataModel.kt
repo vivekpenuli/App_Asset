@@ -13,3 +13,10 @@ In Firebase, a data model concept refers to how you structure and organize
   The data model concept in Firebase is crucial for creating a well-organized and 
   scalable database structure.
 */
+
+/*
+Why to apply them :
+The reason is when we need data to be stored in fireabase we need to pass those data via 
+some vairable and using variable in program can be tedious so we use class to store and pass data.
+But in kotlin we have data class which just provide no need of geeeter and setter explicitly define
+*/
