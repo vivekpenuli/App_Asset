@@ -58,7 +58,7 @@ Intent is a way of using the data passed from one activity to be used by otehr a
         }
 
         binding.add.setOnClickListener {
-            val database = FirebaseDatabase.getInstance().reference
+            val database = FirebaseDatabase.getInstance().reference          // calling the firabase database object
             val userId = auth.currentUser?.uid?:""
 
             val cartItem = AddtoFirebase(foodName,foodPrice,foodDisc,foodImg,foodIngre,1,foodPrice)
