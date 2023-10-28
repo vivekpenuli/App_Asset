@@ -22,7 +22,7 @@ class FoodItemActivity : AppCompatActivity() {
 
 
         //Initalize firebase auth
-        auth = FirebaseAuth.getInstance()
+        auth = FirebaseAuth.getInstance()   // calling firebase instance
 
 binding.imageButton.setOnClickListener {
 
