@@ -26,7 +26,7 @@ class FoodItemActivity : AppCompatActivity() {
 
 binding.imageButton.setOnClickListener {
 
-    val intent = Intent(this, MainActivity::class.java)
+    val intent = Intent(this, MainActivity::class.java)             // calling the new intent and stopping it from calling again
     startActivity(intent)
     finish()
 }
