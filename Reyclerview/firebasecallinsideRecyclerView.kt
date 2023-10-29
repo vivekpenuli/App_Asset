@@ -79,7 +79,9 @@ class CartBindingAdapter(private val dataSet: MutableList<AddtoFirebase>) :
 
                 // Update the quantity in Firebase
             orderReference?.child("fooddQuantity")?.setValue(item.fooddQuantity)
-
+/*
+Once the item qunatity increse we need to push the new quantity to firebase 
+*/
 
         }
         // Function to update the total price when quantity changes
