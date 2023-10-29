@@ -31,6 +31,12 @@ class CartBindingAdapter(private val dataSet: MutableList<AddtoFirebase>) :
             binding.dishNameTextView.text = item.foodName
 //            binding.dishCostTextView.text = item.foodPrice   // The reasin i dont use this is beacuse i need to use the price value from quantity
             updateTotalPrice(item)
+            /*
+            what i want is when my recylerview open the foodprice should be based on quantity i choose 
+            food quantity is updated in firebase but new food price is not 
+            so , instead of   binding.dishCostTextView.text = item.foodPrice whant i do is call the function which
+            will find the foodprice based on quantity .
+            */
             binding.itemCountTextView.text = item.fooddQuantity.toString()
 
             // Handle click on "Add" button
