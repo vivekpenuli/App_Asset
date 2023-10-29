@@ -48,7 +48,7 @@ class CartBindingAdapter(private val dataSet: MutableList<AddtoFirebase>) :
                     updateTotalPrice(item)
 
                     // Update the quantity in Firebase
-                    updateQuantityInFirebase(item)
+                    updateQuantityInFirebase(item)  // When the food Quantity increase i am calling fireabase to increase the quantity of item in firebase
                 }
             }
 
