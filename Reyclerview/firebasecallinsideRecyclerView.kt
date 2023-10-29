@@ -68,7 +68,7 @@ class CartBindingAdapter(private val dataSet: MutableList<AddtoFirebase>) :
                 val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
 
                 // Replace 'foodId' with the actual identifier for the item
-                val foodId = item.foodId  // Replace with your identifier
+                val foodId = item.foodId  // Since each food item is assigned a specific Id , with the help of that Id we are able to find which food item quantity count to increase in fireabse
 
                 val orderReference: DatabaseReference? =
                     foodId?.let {
