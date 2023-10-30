@@ -4,6 +4,11 @@ data class YourDataModel(val foodName :String?= null,
                          val foodDisc :String?=null,
                          val foodImg :String?=null,
                          val foodIngred :String?= null)
+/*
+In firebase data nedd to be stored in the form of json ,
+so wee nedd to pass data to firebase ,
+so in kotlin we use dtaclass which make our task of data passing to firebase easiest
+*/
 
 /*
 Data Model Concept :
