@@ -13,6 +13,6 @@ class Splash_Screen : AppCompatActivity() {
             val intent = Intent(this,Login_activity::class.java)          // Moving to Login activity 
             startActivity(intent)
             finish()
-        },3000)
+        },3000)     // FTime duration of Splash screen
     }
 }
