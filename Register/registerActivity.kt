@@ -15,7 +15,7 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class Register_activity : AppCompatActivity() {
-    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var binding: ActivityRegisterBinding    // When we dealing with Binding in Activity we need to use Activity___Activivty name__Binding
     private  lateinit var auth: FirebaseAuth
     private lateinit var email : String
     private lateinit var password: String
