@@ -30,6 +30,13 @@ class MenuAdapter(private val dataSet: List<YourDataModel>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = MenuitemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
+    // what is MenuBindindg
+    /*
+    To determine which XML layout file is associated with a particular generated binding class, you can look at the naming convention of the binding class. The naming convention for a binding class is as follows:
+
+For a layout file named example_layout.xml, the corresponding binding class is named ExampleLayoutBinding.
+        */
+    
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
