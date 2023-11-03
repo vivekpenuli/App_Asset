@@ -52,7 +52,7 @@ class MenuAdapter(private val dataSet: List<YourDataModel>) :
                 .into(binding.imageView)
 
             binding.root.setOnClickListener {
-                itemClickListener?.onItemClick(item)
+                itemClickListener?.onItemClick(item)   // Note: It will show error if it the class used is not an inner class
             }
         }
     }
