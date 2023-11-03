@@ -33,6 +33,12 @@ class MenuAdapter(private val dataSet: List<YourDataModel>) :
 
     override fun getItemCount() = dataSet.size
 
+
+        // -----------------//
+        /*
+        Make sure that it should be inner class to acess on click listner capability 
+        If it is Not a inner class then it will show error
+        */
     inner class ViewHolder(private val binding: MenuitemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
