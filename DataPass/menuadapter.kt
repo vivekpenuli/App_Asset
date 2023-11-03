@@ -1,3 +1,5 @@
+// Ilustraion of data passing if any item in the reclerview is clicked
+
 package com.example.food_order.adapter
 
 import android.net.Uri
