@@ -17,3 +17,9 @@ pendingOrderItemCount =snapshot.childrenCount.toInt()
 
         })
     }
+/*
+The code you provided retrieves the pending order count from the Firebase Realtime
+Database and updates it in the app's UI. However, it appears that it's only updating when you restart the app.
+To make it update in real-time as data changes in the database, you should use Firebase Realtime Database listeners. 
+Here's how you can modify your code to achieve real-time updates:
+*/
