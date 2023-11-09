@@ -47,3 +47,9 @@ private fun pendingOrders() {
     pendingOrderReference.addValueEventListener(valueEventListener)
 }
 // It ensure UI will update instanteaneiuly on any new change
+
+
+
+
+//-----------------What the Difeerence bEtween Them---------------------------//
+addListenerForSingleValueEvent  vs addValueEventListener
