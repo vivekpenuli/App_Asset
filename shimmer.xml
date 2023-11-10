@@ -119,3 +119,5 @@ android:layout_marginStart="@dimen/_3sdp"
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+// The use of view help us to not worry about the background text .
