@@ -14,7 +14,12 @@ class CartBindingAdapter(private val dataSet: List<cartdata>) :           // Lis
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(CartitemBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
+/*
+        CartitemBinding : ye hamara wo xml he jo ham ne design keya tha recylerview me inflate kar ne ke leye
+        nOTE: ye reclerview wali xml file nhai he
+        */
 
+    
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataSet[position]
         holder.bind(item)
