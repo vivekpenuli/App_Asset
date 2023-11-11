@@ -116,7 +116,7 @@ if (nameofRestaurent.isEmpty())
             flag = 1
         }
 
-        return flag == 1
+        return flag == 1  // if everything is coorect then it will return true otherwise it will return false 
     }
 
 
