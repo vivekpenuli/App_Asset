@@ -44,7 +44,7 @@ class Register_activity : AppCompatActivity() {
             password = binding.passwordsign.text.toString().trim()
             phone = binding.phonenumber.text.toString()
             nameofRestaurent = binding.yearofjoin.text.toString()
-            if (validateField()) {
+            if (validateField()) {      // validating all filed enter by user
                 Toast.makeText(this, "Fill All Field", Toast.LENGTH_SHORT).show();
             } else {
                 createAccount(email, password)
