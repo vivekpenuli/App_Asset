@@ -64,7 +64,7 @@ auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task
 
         val intent = Intent(this,Login_activity::class.java)
         startActivity(intent)
-        finish()
+        finish()  // clear the stack of activity from the activity strack tree
     }
     else{
         Toast.makeText(this, "Acoount Creation Failed", Toast.LENGTH_SHORT).show();
