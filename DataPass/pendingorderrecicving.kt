@@ -33,7 +33,7 @@ userName = intent.getStringExtra("username")
         phonenumber = intent.getStringExtra("phone")
         totalPrice = intent.getStringExtra("totalprice")
         val stringListfoodname = intent.getStringExtra("foodNames")
-        foodNames = stringListfoodname?.split(",")?.toMutableList()!!
+        foodNames = stringListfoodname?.split(",")?.toMutableList()!!     // here we are dividing the string passed into a list using splir function
 
         val stringListfoodimg = intent.getStringExtra("foodimg")
         foodImages = stringListfoodimg?.split(",")?.toMutableList()!!
