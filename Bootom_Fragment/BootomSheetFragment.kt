@@ -72,7 +72,7 @@ class bottomsheetfragment : BottomSheetDialogFragment() {
     private fun setupRecyclerView() {
         val recyclerView = binding.menurecyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        val adapter = MenuAdapter(menuItem)
+        val adapter = MenuAdapter(menuItem)  // here we are passing the entire list into adapter 
         recyclerView.adapter = adapter
     }
 }
