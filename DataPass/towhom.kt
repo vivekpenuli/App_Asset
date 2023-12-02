@@ -67,7 +67,7 @@ Intent is a way of using the data passed from one activity to be used by otehr a
 
             }.addOnFailureListener {
                 Toast.makeText(this, "Not inserted in databse", Toast.LENGTH_SHORT).show()
-
+// whenever we face any failure  during on click a toast will be created
             }
 
         }
